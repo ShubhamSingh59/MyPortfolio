@@ -5,8 +5,7 @@ function Navbar() {
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Offcanvas navbar large">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img id='nav-image' src="./frontend/src/assets/logo.png" alt=""/>
+                    <a className="navbar-brand" href="#">
                         Shubham Singh
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">

@@ -1,47 +1,108 @@
-#about-me{
+#about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 95vw;
     width: 100%;
-    min-height: 100vh;
-    margin: 25px;
+    min-height: auto;
+    padding: 25px;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-#aboutme-body{
+#aboutme-body {
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: center;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+    padding: 20px;
 }
-#aboutme-image{
+
+#aboutme-image {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 30px;
     max-width: 45%;
+    max-height: auto;
 }
-#my-image{    
+
+#my-image {
     height: auto;
     max-width: 65%;
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    border-radius: 20px;
 }
-#aboutme-text{
+
+#my-image:hover {
+    transform: scale(1.05);
+}
+
+#aboutme-text {
     display: flex;
     flex-direction: column;
     max-width: 55%;
     height: auto;
     font-size: 1.5rem;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     padding-right: 35px;
+    object-fit:fill;
 }
-.socials{
-    text-decoration: none;
+
+ul.socials {
     list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
+    gap: 50px;
+    justify-content: center;
 }
-.socials li{
+
+ul.socials li {
+    display: inline-block;
+}
+
+ul.socials li a {
     color: aliceblue;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
 }
+
+ul.socials li a:hover,
+ul.socials li a:focus {
+    color: #0073e6;
+}
+.fab:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    #aboutme-body {
+        flex-direction: column;
+    }
+
+    #aboutme-image,
+    #aboutme-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #my-image {
+        max-width: 80%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

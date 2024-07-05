@@ -19,19 +19,19 @@ function Navbar() {
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                                    <a class="nav-link active" aria-current="page" href="#project-head">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                    <a class="nav-link active" aria-current="page" href="#contactme">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                                    <a class="nav-link active" aria-current="page" href="" onClick={()=>window.open('https://drive.google.com/uc?export=download&id=1ZQU__KmpaLR34XGUYdyjYKHpWH4WR1tR')}>Resume</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Resume</a>
+                                    <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
                                 </li>
                             </ul>
                         </div>

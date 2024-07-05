@@ -1,0 +1,32 @@
+#footer{
+    padding: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#company-tag{
+    font-size: 1rem;
+    padding-left: 25px;
+}
+#socials{
+    margin-right: 50px;
+}
+#social-id{
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+#social-id li{
+    display: inline-block;
+}
+#social-id li a{
+    color: aliceblue;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+#social-id li a:hover,
+#social-id li a:focus {
+    color: #0073e6;
+}

@@ -1,3 +1,10 @@
 a.navbar-brand {
     font-size: 1.4rem;
+    padding-left: 13px;
 }   
+.nav-link{
+    translate: 0.3s ease;
+}
+.nav-link:hover {
+    transform: scale(1.2); 
+}

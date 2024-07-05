@@ -1,0 +1,119 @@
+center{
+    margin-top: 10px;
+}
+#contactme {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    gap: 10%;
+}
+
+#contact-form {
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 10px;
+    /*margin-right: 60px;*/
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form input {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: rgb(90, 66, 66);
+    color: aliceblue;
+}
+
+#form input::placeholder {
+    color: aliceblue;
+}
+
+#form input:focus {
+    outline: none;
+}
+
+#btn {
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #005bb5;
+}
+
+#contact-socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px;
+    /*margin-left: 60px;*/
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+}
+
+#social ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#social ul li {
+    display: inline-block;
+}
+
+#social ul li a {
+    color: aliceblue;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+#social ul li a:hover {
+    color: #0073e6;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+#details .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #contactme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-form, 
+    #contact-socials {
+        max-width: 100%;
+    }
+}

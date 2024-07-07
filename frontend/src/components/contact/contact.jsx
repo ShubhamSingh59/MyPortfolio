@@ -3,13 +3,13 @@ import './contact.css'
 function Contact() {
     return (<>
         <center><h2>Contact Me</h2></center>
-        <section id="contactme" >
+        <section id="contactme" >      
             <div id="contact-form">
                 <form id="form">
                     <input type="text" id="name" placeholder="Full Name" />
                     <input type="email" id="email" placeholder="Email Address" />
                     <input type="text" id="text" placeholder="Message" />
-                    <button type='submit' id='btn'>Send</button>
+                    <button type='submit' id='btn'>Send to Me</button>
                 </form>
             </div>
             <div id="contact-socials">
